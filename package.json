@@ -1,8 +1,8 @@
 {
   "name": "react-sx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-sx for react javascript web ui libraray, YICHANG HUBEI CHINA ",
-  "main": "index.js",
+  "main": "./dist/react-sx.min.js",
   "directories": {
     "lib": "lib"
   },
