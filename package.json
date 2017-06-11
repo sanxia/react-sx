@@ -1,0 +1,44 @@
+{
+  "name": "react-sx",
+  "version": "1.0.1",
+  "description": "react-sx for react javascript web ui libraray, YICHANG HUBEI CHINA ",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^3.0.5",
+    "fbjs": "^0.8.12",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanxia/react-sx.git"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "dist/",
+    "lib/"
+  ],
+  "keywords": [
+    "sx",
+    "react-sx"
+  ],
+  "author": "美丽的地球啊",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanxia/react-sx/issues"
+  },
+  "homepage": "https://github.com/sanxia/react-sx#readme"
+}
