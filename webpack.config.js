@@ -6,13 +6,13 @@ module.exports = {
     "react-sx":'./lib/index',
   },
   output: {
-    path: path.join(__dirname, './dist'),
+    path: path.resolve(__dirname, './dist'),
     filename: '[name].min.js'
   },
   plugins: [
     new webpack.DefinePlugin({ 
       'process.env':{
-        'NODE_ENV': JSON.stringify('production')
+        'NODE_ENV': JSON.stringify('development')
       }, 
       __DEBUG__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
     }),
