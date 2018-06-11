@@ -2001,7 +2001,7 @@ p.sx-manage-bar-item{
     background: transparent url("/static/img/sprite/progress.png") no-repeat scroll 0px -100px;
 }
 .sx-step-text{
-    color: #666;
+    color: #d8d8d8;
     font-size: 12px;
     font-style: normal;
 }
@@ -2011,8 +2011,14 @@ p.sx-manage-bar-item{
 .sx-step-pass .sx-step-line{
    background-color: green; 
 }
+.sx-step-pass .sx-step-text{
+    color: #666;
+}
 .sx-step-active .sx-step-icon{
     background: transparent url("/static/img/sprite/progress.png") no-repeat scroll 0px 0px;
+}
+.sx-step-active .sx-step-text{
+    color: #2fb3ff;
 }
 /*sx step end*/
 
