@@ -555,6 +555,55 @@
 }
 /*font size end*/
 
+/*cursor start*/
+.sx-cursor-default{
+    cursor: default;
+}
+.sx-cursor-pointer{
+    cursor: pointer;
+}
+.sx-cursor-text{
+    cursor: text;
+}
+.sx-cursor-move{
+    cursor: move;
+}
+.sx-cursor-crosshair{
+    cursor: crosshair;
+}
+.sx-cursor-resizel{
+    cursor: w-resize;
+}
+.sx-cursor-resizer{
+    cursor: e-resize;
+}
+.sx-cursor-resizet{
+    cursor: n-resize;
+}
+.sx-cursor-resizeb{
+    cursor: s-resize;
+}
+.sx-cursor-resizelt{
+    cursor: nw-resize;
+}
+.sx-cursor-resizelb{
+    cursor: sw-resize;
+}
+.sx-cursor-resizert{
+    cursor: ne-resize;
+}
+.sx-cursor-resizerb{
+    cursor: se-resize;
+}
+.sx-cursor-wait{
+    cursor: wait;
+}
+.sx-cursor-help{
+    cursor: help;
+}
+
+/*cursor end*/
+
 /*skin start*/
 .sx-skin-default{
 
@@ -1114,6 +1163,9 @@ p.sx-manage-bar-item{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sx-btn-icon img{
+    margin: 5px;
 }
 .sx-btn-valid{
     font-weight: normal;
@@ -2086,9 +2138,22 @@ p.sx-manage-bar-item{
 .sx-line-r{
     border-right:1px solid #f9f9f9;
 }
-
-
 /*line end*/
+
+/*debug start*/
+.sx-debug{
+    border: 1px solid red;
+}
+.sx-debug-yellow{
+    border: 1px solid blue;
+}
+.sx-debug-green{
+    border: 1px solid green; 
+}
+.sx-debug-blue{
+    border: 1px solid blue; 
+}
+/*debug end*/
 
 /*paging bar start*/
 .sx-placeholder{
