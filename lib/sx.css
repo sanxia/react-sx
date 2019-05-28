@@ -1369,7 +1369,6 @@ p.sx-manage-bar-item{
     background: url("/static/img/sx/reg.png") no-repeat scroll -32px -24px transparent;
     visibility: visible; 
     opacity: 1;
-    border: 1px solid red;
     cursor: pointer;
 }
 .sx-input-clear:hover{
