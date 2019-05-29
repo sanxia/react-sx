@@ -1163,9 +1163,10 @@ p.sx-manage-bar-item{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
 .sx-btn-icon img{
-    margin: 5px;
+
 }
 .sx-btn-valid{
     font-weight: normal;
