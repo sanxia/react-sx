@@ -980,12 +980,6 @@
 }
 /*location bar end*/
 
-/*sx-manage-bar start*/
-p.sx-manage-bar-item{
-    margin: 0 5px 0 0;
-}
-/*sx-manage-bar end*/
-
 /*toolbar start*/
 .sx-toolbar-wrap {
     position: absolute;
@@ -1171,24 +1165,32 @@ p.sx-manage-bar-item{
 .sx-btn-valid{
     font-weight: normal;
     cursor: pointer;
+    /*
     background-color: #899FE0; 
     border: 1px solid #5E7BD5;
+    */
+    background-color: /*#6bc802*/ #4fc203;
+    border: 1px solid #4fc545;
 }
 .sx-btn-valid span{
-    color: #F0F3FB;
+    color: #f0f3fb;
 }
 .sx-btn-active{
-    background-color: #3F89EC;
-    border: 1px solid #5E7BD5;
-    animation: sx-animation-btn-active 0.25s ease 0s 1;
-    -webkit-animation: sx-animation-btn-active 0.25s ease 0s 1;
+    /*background-color: #3F89EC;*/
+    /*border: 1px solid #5E7BD5;*/
+
+    background-color: #4fc803;
+    border: 1px solid #4fc545;
+    animation: sx-animation-btn-active 0.25s ease 0.1s 1;
+    -webkit-animation: sx-animation-btn-active 0.25s ease 0.1s 1;
 }
 .sx-btn-active span{
     color: #fff;
 }
 .sx-btn-selected{
     background-color: #2F89EC;
-    border: 1px solid #5E7BD5;
+    /*border: 1px solid #5E7BD5;*/
+    border: 1px solid #4fc545;
 }
 .sx-btn-selected span{
     color: #e9e9e9;
@@ -1196,11 +1198,11 @@ p.sx-manage-bar-item{
 .sx-btn-invalid{
     font-weight: normal;
     cursor: not-allowed;
-    border:1px solid #d8d8d8;
-    background-color:#e9e9e9;
+    border:1px solid #eee;
+    background-color:#f9f9f9;
 }
 .sx-btn-invalid span{
-    color: #aaa;
+    color: #d8d8d8;
 }
 .sx-btn-submit{
     height: 50px;
@@ -1887,14 +1889,14 @@ p.sx-manage-bar-item{
 .sx-txt-default{
     color: #666; 
 }
-.sx-txt-info{
-    color: #ccc; 
-}
 .sx-txt-title{
     color: #666; 
 }
 .sx-txt-content{
     color: #aaa; 
+}
+.sx-txt-info{
+    color: #ccc; 
 }
 .sx-txt-display, .sx-txt-display *{
     color: #2fb3ff;
@@ -2103,8 +2105,8 @@ p.sx-manage-bar-item{
     display: inline-block;
     color: #aaa;
     cursor: not-allowed;
-    border:1px solid #d8d8d8;
-    background-color:#e9e9e9;
+    border:1px solid #eee;
+    background-color:#f9f9f9;
 }
 /*verify box end*/
 
@@ -2903,13 +2905,22 @@ p.sx-manage-bar-item{
 
 @keyframes sx-animation-btn-active
 {
+    0% {background-color: #26c803;}
+    100% {background-color: #4fc803;}
+    
+    /*
     0% {background-color: #899FE0;}
     100% {background-color: #5E7BD5;}
+    */
 }
  
 @-webkit-keyframes sx-animation-btn-active
 {
+    0% {background-color: #26c803;}
+    100% {background-color: #4fc803;}
+    /*
     0% {background-color: #899FE0;}
     100% {background-color: #5E7BD5;}
+    */
 }
 /*sx animation end*/
