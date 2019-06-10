@@ -1084,7 +1084,17 @@
     background-color: #fafafa;
 }
 .sx-list-row{
-
+    margin:  0 0;
+}
+.sx-list-row-odd{
+    background: #fffdfa;
+}
+.sx-list-row-even{
+    background: #fffaf7;
+}
+.sx-list-row-active{
+    color: #fff;
+    background: #aac0ed;
 }
 .sx-list-row-header{
 
@@ -1107,6 +1117,7 @@
 .sx-list-cell-last {
     border-bottom: 1px solid #e9e9e9;
 }
+
 .sx-list-row-footer{
 
 }
@@ -1117,7 +1128,19 @@
 /*sx list end*/
 
 /*sx list cell item start*/
+.sx-list-cell-item-heading{
+    margin: 0 5px;
+}
+.sx-list-cell-item-content{
+
+}
 .sx-list-cell-item-toolbar{
+    margin: 0 5px;
+}
+.sx-list-cell-item-details{
+    margin: 0 5px 0 0;
+}
+.sx-list-cell-item-tailing{
     margin: 0 5px;
 }
 /*sx list cell item end*/
