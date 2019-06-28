@@ -142,6 +142,54 @@
 .sx-mr30{
     margin-right: 30px !important;
 }
+
+.sx-m40{
+    margin: 40px !important;
+}
+.sx-mtb40{
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+.sx-mlr40{
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+}
+.sx-mt40{
+    margin-top: 40px !important;
+}
+.sx-mb40{
+    margin-bottom: 40px !important;
+}
+.sx-ml40{
+    margin-left: 40px !important;
+}
+.sx-mr40{
+    margin-right: 40px !important;
+}
+
+.sx-m50{
+    margin: 50px !important;
+}
+.sx-mtb50{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+.sx-mlr50{
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+.sx-mt50{
+    margin-top: 50px !important;
+}
+.sx-mb50{
+    margin-bottom: 50px !important;
+}
+.sx-ml50{
+    margin-left: 50px !important;
+}
+.sx-mr50{
+    margin-right: 50px !important;
+}
 /*margin end*/
 
 /*padding start*/
@@ -1043,6 +1091,15 @@
 }
 /*sx box end*/
 
+/*position start*/
+.sx-absolute {
+    position: absolute;
+}
+.sx-relative {
+    position: relative;
+}
+/*position end*/
+
 /*location bar start*/
 .sx-location{
     border-bottom:1px solid #ded5de;
@@ -1058,7 +1115,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 10px;
+    margin: 0 0 10px 0;
     background-color: #fff;
 }
 .sx-location-bar dt{
@@ -1113,7 +1170,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding:0 15px;
+    padding:0 10px;
     border-bottom: 1px solid #ddd;
     height:40px;
 }
@@ -1160,7 +1217,7 @@
 }
 
 .sx-tabbar-content {
-    padding: 10px;
+    padding: 0;
 }
 .sx-tabbar-content-border{
 
@@ -1204,11 +1261,10 @@
 
 }
 .sx-list-section-header{
-
+    margin: 20px 0 10px 0;
 }
 .sx-list-section-header-default{
     padding: 16px 0;
-    color: #999;
     background-color: #fafafa;
 }
 .sx-list-row{
@@ -1623,7 +1679,6 @@
     justify-content: space-between;
     flex: 1 1 auto;
     padding: 5px !important;
-    margin: 5px 0 0 0 !important;
     border: 1px solid #ddd;
 }
 .sx-radio-box-active{
@@ -1639,18 +1694,18 @@
     flex-wrap: wrap;
     flex-direction: row;
     flex: 1 1 auto;
-    padding: 5px;
-    margin: 0;
+    margin: 0 5px;
     color: #666;
 }
 .sx-radio-option{
-    padding: 5px;
+    margin: 10px 0;
 }
 .sx-radio-option input{
-    margin: 5px;
+
 }
 .sx-radio-option em{
     font-style: normal;
+    margin: 5px 10px 5px 5px;
 }
 .sx-radio-option-default em *{
     color: #999;
@@ -1893,6 +1948,14 @@
     height: 26px;
     top: 60px;
     right: -5px;
+    background: url('/static/img/sx/v.png');
+}
+.sx-v-avatar2{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 26px;
+    left: 12px;
     background: url('/static/img/sx/v.png');
 }
 .sx-sex{
