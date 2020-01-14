@@ -477,6 +477,9 @@
 .sx-w300{
     width: 300px !important;
 }
+.sx-w320{
+    width: 320px !important;
+}
 .sx-w350{
     width: 350px !important;
 }
@@ -485,6 +488,9 @@
 }
 .sx-w450{
     width: 450px !important;
+}
+.sx-w480{
+    width: 480px !important;
 }
 .sx-w500{
     width: 500px !important;
@@ -586,6 +592,9 @@
 .sx-h300{
     height: 300px !important;
 }
+.sx-h320{
+    height: 320px !important;
+}
 .sx-h350{
     height: 350px !important;
 }
@@ -594,6 +603,9 @@
 }
 .sx-h450{
     height: 450px !important;
+}
+.sx-h480{
+    height: 480px !important;
 }
 .sx-h500{
     height: 500px !important;
@@ -687,6 +699,10 @@
     width: 300px !important;
     height: 300px !important;
 }
+.sx-wh320{
+    width: 320px !important;
+    height: 320px !important;
+}
 .sx-wh350{
     width: 350px !important;
     height: 350px !important;
@@ -699,13 +715,24 @@
     width: 450px !important;
     height: 450px !important;
 }
+.sx-wh480{
+    width: 480px !important;
+    height: 480px !important;
+}
 .sx-wh500{
     width: 500px !important;
     height: 500px !important;
 }
+.sx-whp100{
+    width: 100% !important;
+    height: 100% !important;
+}
 /*width height end*/
 
 /*font size start*/
+.sx-font9{
+    font-size: 0.8em;
+}
 .sx-font10{
     font-size: 1.0em;
 }
@@ -1303,6 +1330,9 @@
 /*toolbar end*/
 
  /*tabbar start*/
+.sx-tabbar-view {
+
+}
 .sx-tabbar-wrap {
     display: -ms-flex;
     display: -moz-flex;
@@ -1312,8 +1342,7 @@
     position: relative;
     flex-direction: column;
     justify-content: space-between;
-}
-    
+} 
 .sx-tabbar {
     display: -ms-flex;
     display: -moz-flex;
@@ -1322,17 +1351,16 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding:0 10px;
+    justify-content: center;
+    padding: 0 10px;
     border-bottom: 1px solid #ddd;
-    height:40px;
+    min-height:40px;
 }
-
 .sx-tabbar li {
     margin-bottom: -1px;
     position: relative;
     list-style-type: none;
 }
-
 .sx-tabbar li a {
     display: block;
     margin-right: 1px;
@@ -1342,8 +1370,7 @@
     line-height: 19px;
     cursor: pointer;
     text-decoration: none;
-}
-    
+}  
 .sx-tabbar li a:hover {
     color: #999;
     border-bottom: 1px solid #ddd;
@@ -1351,11 +1378,9 @@
     animation: sx-animation-tab 0.45s ease 0s 1 ;
     -webkit-animation: sx-animation-tab 0.45s ease 0s 1 ;
 }
-
 .sx-tabbar li.sx-tabbar-active {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
-
 .sx-tabbar li.sx-tabbar-active a {
     cursor: text;
     font-weight:bold;
@@ -1367,7 +1392,6 @@
     color: #2fb3ff;
     background: none repeat scroll 0 0 #fff;
 }
-
 .sx-tabbar-content {
     padding: 0;
 }
@@ -2677,22 +2701,6 @@
 /*cover item end*/
 
 /* sx verify start */
-.sx-verify-image{
-    position: relative !important;
-    margin: 5px 0;
-    padding: 0;
-}
-.sx-verify-refresh{
-    position: absolute !important;
-    top:0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    background: url("/static/img/sx/refresh.png") no-repeat scroll left top transparent;
-    z-index: 10;
-}
-
 .sx-verify{
     padding: 10px 10px;
     margin: 0 0 0 5px;
@@ -2708,13 +2716,17 @@
 .sx-verify-title{
     color: #d8d8d8;
 }
+.sx-verify-info{
+    margin-left: 2px;
+    color: #999;
+}
 .sx-verify-valid{
     padding: 5px;
     display: inline-block;
     color: #fff;
     cursor: pointer;
     border:1px solid #3F89EC;
-    background-color:#3F89EC;
+    background-color: #3F89EC;
 }
 .sx-verify-invalid{
     padding: 5px;
@@ -2722,7 +2734,22 @@
     color: #aaa;
     cursor: not-allowed;
     border:1px solid #eee;
-    background-color:#f9f9f9;
+    background-color: #f9f9f9;
+}
+.sx-verify-image{
+    position: relative !important;
+    margin: 5px 0;
+    padding: 0;
+}
+.sx-verify-refresh{
+    position: absolute !important;
+    top:0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: url("/static/img/sx/refresh.png") no-repeat scroll left top transparent;
+    z-index: 10;
 }
 /*verify box end*/
 
@@ -2815,6 +2842,9 @@
 }
 .sx-border-green{
     border: 1px solid green; 
+}
+.sx-border-black{
+    border: 1px solid black;
 }
 /*border color end*/
 
@@ -3321,7 +3351,7 @@
     justify-content: center;
     align-items: stretch;
 
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #3F89EC;
     background-color: #fff;
     opacity: 1;
@@ -3411,36 +3441,39 @@
 
 /* piano start */
 .sx-keyboard{
-    margin: 10px 0;
-    width: 180px;
-    background-color:#fff;
+    margin: 10px;
+    width: 120px;
+    background-color: #fff;
 }
 .sx-keyboard-whitekey {
     position: relative;
-    margin: 0 4px 0 0;
+    padding: 1px;
+    background-color: #aaa;
     cursor: pointer;
 }
 .sx-keyboard-whitekey-selected{
-    position:absolute;
-    top: 50px;
+    position: absolute;
+    top: 48px;
     width: 5px;
     height: 5px;
-    background-color: green;
+    background-color: #333;
 }
 .sx-keyboard-whitekey-select .sx-keyboard-whitekey-icon{
     animation: sx-animation-keyboard-whitekey-select 0.55s 1 ease forwards;
 }
 .sx-keyboard-whitekey-activing .sx-keyboard-whitekey-icon{
-    background-color: red;
+    background-color: green;
 }
 .sx-keyboard-whitekey-icon {
-    width:20px;
-    height:60px;
-    background-color: #f9f9f9;
+    position: relative;
+    width: 16px;
+    height: 70px;
+    background-color: #fcfcfc;
 }
 .sx-keyboard-whitekey-text {
-    margin: 5px 0 0 0;
-    color: #d8d8d8;
+    position: absolute;
+    top: 55px;
+    color: #aaa;
 }
 .sx-keyboard-blackkey {
     position: relative;
@@ -3448,32 +3481,32 @@
     z-index: 5;
 }
 .sx-keyboard-blackkey-selected{
-    position:absolute;
+    position: absolute;
     top: 30px;
     width: 5px;
     height: 5px;
-    background-color: #f9f9f9;
+    background-color: #fcfcfc;
 }
 .sx-keyboard-blackkey-select .sx-keyboard-blackkey-icon{
     animation: sx-animation-keyboard-blackkey-select 0.55s 1 ease forwards;
 }
 .sx-keyboard-blackkey-activing .sx-keyboard-blackkey-icon{
-    background-color: blue;
+    background-color: green;
 }
 .sx-keyboard-blackkey-icon {
     position: absolute;
-    width:20px;
-    height:38px;
-    left:-12px;
+    width: 15px;
+    height: 40px;
+    left: -8px;
     background-color: #333;
 }
 .sx-keyboard-blackkey-text {
-    font-size:9px;
-    color:#fff;
+    font-size: 9px;
+    color: #fff;
 }
 @keyframes sx-animation-keyboard-whitekey-select {
     0% {background-color: green;}
-    100% {background-color: #f9f9f9;}
+    100% {background-color: #fcfcfc;}
 }
 @keyframes sx-animation-keyboard-blackkey-select {
     0% {background-color: green;}
