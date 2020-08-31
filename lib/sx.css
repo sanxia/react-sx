@@ -1405,7 +1405,9 @@
 .sx-cursor-help{
     cursor: help;
 }
-
+.sx-cursor-invalid{
+    cursor: not-allowed;
+}
 /*cursor end*/
 
 /*skin start*/
@@ -2290,6 +2292,15 @@
 /*sx list cell item end*/
 
 /*sx button start*/
+.sx-touch {
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+
 .sx-btn {
     display: -ms-flex;
     display: -moz-flex;
@@ -2371,7 +2382,7 @@
 .sx-btn-invalid{
     font-weight: normal;
     cursor: not-allowed;
-    border:1px solid #eee;
+    border: 1px solid #eee;
     background-color:#f9f9f9;
 }
 .sx-btn-invalid span{
@@ -2408,12 +2419,6 @@
     border: none;
 }
 /*sx image button end*/
-
-/*sx cursor start*/
-.sx-cursor-pointer{
-    cursor: pointer;
-}
-/*sx cursor end*/
 
 /*sx view start*/
 .sx-view{
