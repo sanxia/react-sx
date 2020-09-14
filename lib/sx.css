@@ -2079,6 +2079,7 @@
     position: relative;
     flex-direction: column;
     justify-content: space-between;
+    margin: 10px 0;
 } 
 .sx-tabbar {
     display: -ms-flex;
@@ -2212,7 +2213,7 @@
     border-bottom: 1px solid #e9e9e9;
 }
 .sx-list-section-header{
-    margin: 10px 0;
+    margin: 0;
 }
 .sx-list-section-header-default{
     padding: 16px 0;
@@ -2528,14 +2529,11 @@
     align-items: center;
     margin: 0 0 5px 0;
 }
-.sx-input-header i{
-    display: -ms-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sx-input-title{
+    color: #666;
+}
+.sx-input-require{
+    margin: 0 5px;
     color: red;
 }
 .sx-input-body{
@@ -2662,7 +2660,6 @@
     position: relative;
     flex-direction: column;
     flex: 1 1 auto;
-    margin: 10px 0;
 }
 .sx-radio-title{
     display: -ms-flex;
@@ -2788,6 +2785,7 @@
 .sx-select-group label{
     margin-bottom: 5px;
 }
+
 .sx-cascade{
     display: -ms-flex;
     display: -moz-flex;
@@ -3908,7 +3906,7 @@
    background-color: green; 
 }
 .sx-step-pass .sx-step-text{
-    color: #666;
+    color: green;
 }
 .sx-step-active .sx-step-text{
     color: #2fb3ff;
